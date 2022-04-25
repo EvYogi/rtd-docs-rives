@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>smartgrid.image_processing package &mdash; Smart Grid API  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/engiegreen.jpg"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Smart Grid API  documentation" href="index.html"/>
+        <link rel="up" title="smartgrid package" href="smartgrid.html"/>
+        <link rel="next" title="smartgrid.io package" href="smartgrid.io.html"/>
+        <link rel="prev" title="smartgrid package" href="smartgrid.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Smart Grid API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">smartgrid</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="smartgrid.html">smartgrid package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="smartgrid.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">smartgrid.image_processing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.io.html">smartgrid.io package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.microgrid.html">smartgrid.microgrid package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.pvmodeling.html">smartgrid.pvmodeling package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.tests.html">smartgrid.tests package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="smartgrid.html#module-smartgrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">SmartGrid tutorials</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Smart Grid API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">smartgrid</a> &raquo;</li>
+        
+          <li><a href="smartgrid.html">smartgrid package</a> &raquo;</li>
+        
+      <li>smartgrid.image_processing package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/smartgrid.image_processing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="smartgrid-image-processing-package">
+<h1>smartgrid.image_processing package<a class="headerlink" href="#smartgrid-image-processing-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-smartgrid.image_processing.block_matching">
+<span id="smartgrid-image-processing-block-matching-module"></span><h2>smartgrid.image_processing.block_matching module<a class="headerlink" href="#module-smartgrid.image_processing.block_matching" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.image_processing.block_matching.BlockMatching">
+<em class="property">class </em><code class="descclassname">smartgrid.image_processing.block_matching.</code><code class="descname">BlockMatching</code><a class="headerlink" href="#smartgrid.image_processing.block_matching.BlockMatching" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class wrapping all the required methods to efficiently compute block matching on two consequent
+images</p>
+<dl class="method">
+<dt id="smartgrid.image_processing.block_matching.BlockMatching.block_match">
+<code class="descname">block_match</code><span class="sig-paren">(</span><em>img_1</em>, <em>img_2</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.block_matching.BlockMatching.block_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply block matching on two images, img_1 being the oldest</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>img_1</strong> (<em>numpy.array</em>) – image with grey levels, corresponds to image at time t-15 minutes in production</li>
+<li><strong>img_2</strong> (<em>numpy.array</em>) – image with grey levels, corresponds to image at time t in production</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">X, Y, Vx Vy, as coordinates and values where block matching is computed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple of np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.image_processing.block_matching.BlockMatching.interpolate_vectors">
+<code class="descname">interpolate_vectors</code><span class="sig-paren">(</span><em>Vx</em>, <em>Vy</em>, <em>X</em>, <em>Y</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.block_matching.BlockMatching.interpolate_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interpolate values from vectors Vx and Vy</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>X</strong> (<em>numpy.ndarray</em>) – points of coordinates on axis X</li>
+<li><strong>Y</strong> (<em>numpy.ndarray</em>) – points of coordinates on axis Y</li>
+<li><strong>Vx</strong> (<em>numpy.ndarray</em>) – Vectors of coordinates on axis X</li>
+<li><strong>Vy</strong> (<em>numpy.ndarray</em>) – Vectors of coordinates on axis Y</li>
+<li><strong>shape</strong> (<em>tuple</em>) – Size to reshape the vectors in a matrix (cf xvgrid)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Vx,Vx as vectors of coordinates interpolated, with larger size</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple of np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.image_processing.block_matching.BlockMatching.patchify">
+<code class="descname">patchify</code><span class="sig-paren">(</span><em>img</em>, <em>patch_shape</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.block_matching.BlockMatching.patchify" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides img into numerous patches with efficient numpy routines</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>img</strong> (<em>np.array</em>) – input image</li>
+<li><strong>patch_shape</strong> (<em>tuple</em>) – size of the patch</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list of patches created in C order</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">list of np.arrays</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.image_processing.block_matching.BlockMatching.smoothing_vectors">
+<code class="descname">smoothing_vectors</code><span class="sig-paren">(</span><em>Vx</em>, <em>Vy</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.block_matching.BlockMatching.smoothing_vectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Smooth values from vectors Vx and Vy</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>Vx</strong> (<em>numpy.ndarray</em>) – Vectors of coordinates on axis X</li>
+<li><strong>Vy</strong> (<em>numpy.ndarray</em>) – Vectors of coordinates on axis Y</li>
+<li><strong>shape</strong> (<em>tuple</em>) – Size to reshape the vectors in a matrix (cf xvgrid)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Vx,Vx as vectors of coordinates smoothed, with the same size</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple of np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.image_processing.compute_GHI">
+<span id="smartgrid-image-processing-compute-ghi-module"></span><h2>smartgrid.image_processing.compute_GHI module<a class="headerlink" href="#module-smartgrid.image_processing.compute_GHI" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.image_processing.compute_GHI.clear_sky_ghi">
+<code class="descclassname">smartgrid.image_processing.compute_GHI.</code><code class="descname">clear_sky_ghi</code><span class="sig-paren">(</span><em>zenith</em>, <em>doy</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.compute_GHI.clear_sky_ghi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the Global Horizontal Irradiance (GHI) under a clear sky, for a given zenith value, at a given day of year
+This model is trained on actual data, and parameters are accessible in the configuration file conf.json</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>zenith</strong> (<em>float</em>) – value of the zenith to compute</li>
+<li><strong>doy</strong> (<em>float</em>) – floating value of the day of year</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">floating value of the GHI computed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">float</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.image_processing.compute_GHI.predict_GHI">
+<code class="descclassname">smartgrid.image_processing.compute_GHI.</code><code class="descname">predict_GHI</code><span class="sig-paren">(</span><em>img_infrared</em>, <em>img_infrared_15</em>, <em>img_visual</em>, <em>timestamp</em>, <em>clearsky</em>, <em>overcast</em>, <em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.compute_GHI.predict_GHI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predicts GHI</p>
+<p>Given two consequent infrared images, the corresponding visual image, a timestamp, and the reference
+images clearky &amp; overcats, computes the GHI for the models given in <a href="#id1"><span class="problematic" id="id2">*</span></a>args</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>img_infrared</strong> (<em>np.array</em>) – the infrared image at the time of the prediction</li>
+<li><strong>img_infrared_15</strong> (<em>np.array</em>) – the infrared image 15 minutes before the prediction (for block matching)</li>
+<li><strong>img_visual</strong> (<em>np.array</em>) – the visual image at the time of the prediction</li>
+<li><strong>timestamp</strong> (<em>str</em>) – any form of string timestamp, interpretable by numpy</li>
+<li><strong>clearsky</strong> (<em>np.array</em>) – the clearsky reference image (month &amp; hour of the timestamp)</li>
+<li><strong>overcast</strong> (<em>np.array</em>) – the overcast reference image (month &amp; hour of the timestamp)</li>
+<li><strong>args</strong> – list of models</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">predictions and data point used for prediction</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple of tuples</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.image_processing.satellite_image_processing">
+<span id="smartgrid-image-processing-satellite-image-processing-module"></span><h2>smartgrid.image_processing.satellite_image_processing module<a class="headerlink" href="#module-smartgrid.image_processing.satellite_image_processing" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.image_processing.satellite_image_processing.remove_borders_with_convolution">
+<code class="descclassname">smartgrid.image_processing.satellite_image_processing.</code><code class="descname">remove_borders_with_convolution</code><span class="sig-paren">(</span><em>img</em>, <em>borders</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.satellite_image_processing.remove_borders_with_convolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the points referenced by borders on image. Apply a 2D convolution on img with a 3*3 unitary patch
+Convolution is applied arbitrarly 10 times in order to prevent from infinite loop</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>img</strong> (<em>bytes</em>) – binary encoding of satellite image</li>
+<li><strong>borders</strong> (<em>numpy.ndarray</em>) – boolean array of borders coordinates, size (615, 845)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">image with borders removed, size of input image</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">PIL.Image</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.image_processing.solar_angles_computation">
+<span id="smartgrid-image-processing-solar-angles-computation-module"></span><h2>smartgrid.image_processing.solar_angles_computation module<a class="headerlink" href="#module-smartgrid.image_processing.solar_angles_computation" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.image_processing.solar_angles_computation.day_of_the_year_computation">
+<code class="descclassname">smartgrid.image_processing.solar_angles_computation.</code><code class="descname">day_of_the_year_computation</code><span class="sig-paren">(</span><em>universal_time</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.solar_angles_computation.day_of_the_year_computation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the floating value for the day of the year</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>universal_time</strong> (<em>numpy.datetime64</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">numeric value of the day of year</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.image_processing.solar_angles_computation.solar_angles_computation">
+<code class="descclassname">smartgrid.image_processing.solar_angles_computation.</code><code class="descname">solar_angles_computation</code><span class="sig-paren">(</span><em>universal_time</em>, <em>longitude</em>, <em>latitude</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.image_processing.solar_angles_computation.solar_angles_computation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the zenith matrix associated with longitude, latitude at a given universal time,
+reference NOAA Global Monitoring Division</p>
+<p>WARNING : longitude value is to be converted in radians within the calculus, and azimuth is given
+as the complementary of 2 Pi</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>universal_time</strong> (<em>numpy.datetime64</em>) – universal time</li>
+<li><strong>longitude</strong> (<em>numpy.ndarray</em>) – array of the considered longitude</li>
+<li><strong>latitude</strong> (<em>numpy.ndarray</em>) – array of the considered latitude</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">tuple containing zenith and azimuth values in degrees</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">tuple of np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.image_processing">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-smartgrid.image_processing" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="smartgrid.io.html" class="btn btn-neutral float-right" title="smartgrid.io package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="smartgrid.html" class="btn btn-neutral" title="smartgrid package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ENGIE.
+      Last updated on Oct 02, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

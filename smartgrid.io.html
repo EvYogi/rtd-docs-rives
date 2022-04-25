@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>smartgrid.io package &mdash; Smart Grid API  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/engiegreen.jpg"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Smart Grid API  documentation" href="index.html"/>
+        <link rel="up" title="smartgrid package" href="smartgrid.html"/>
+        <link rel="next" title="smartgrid.microgrid package" href="smartgrid.microgrid.html"/>
+        <link rel="prev" title="smartgrid.image_processing package" href="smartgrid.image_processing.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Smart Grid API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">smartgrid</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="smartgrid.html">smartgrid package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="smartgrid.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.image_processing.html">smartgrid.image_processing package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">smartgrid.io package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.microgrid.html">smartgrid.microgrid package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.pvmodeling.html">smartgrid.pvmodeling package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.tests.html">smartgrid.tests package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="smartgrid.html#module-smartgrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">SmartGrid tutorials</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Smart Grid API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">smartgrid</a> &raquo;</li>
+        
+          <li><a href="smartgrid.html">smartgrid package</a> &raquo;</li>
+        
+      <li>smartgrid.io package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/smartgrid.io.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="smartgrid-io-package">
+<h1>smartgrid.io package<a class="headerlink" href="#smartgrid-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-smartgrid.io.export_grafana">
+<span id="smartgrid-io-export-grafana-module"></span><h2>smartgrid.io.export_grafana module<a class="headerlink" href="#module-smartgrid.io.export_grafana" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.export_dataframe_to_whisper">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">export_dataframe_to_whisper</code><span class="sig-paren">(</span><em>input_dataframe</em>, <em>whisper_path</em>, <em>whisper_prefix</em>, <em>whisper_sampling</em>, <em>overwrite=True</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.export_dataframe_to_whisper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming the input dataframe has a timestamped index and numerical columns,
+push every column of the input dataframe to a whisper directory (builds it if necessary),
+that will used by graphite.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_dataframe</strong> – dataframe to export</li>
+<li><strong>whisper_path</strong> – the grafana whisper directory</li>
+<li><strong>whisper_prefix</strong> – the time serie grafana name</li>
+<li><strong>whisper_sampling</strong> – the grafana sampling for export</li>
+<li><strong>overwrite</strong> – overwrite mode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.export_selected_columns_to_whisper">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">export_selected_columns_to_whisper</code><span class="sig-paren">(</span><em>dataframe</em>, <em>columns</em>, <em>whisper_path</em>, <em>whisper_prefix</em>, <em>whisper_sampling</em>, <em>overwrite=True</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.export_selected_columns_to_whisper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets only selected columns from original dataframe then exports the results to whisper.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> – the datafame to export</li>
+<li><strong>columns</strong> – the selected columns</li>
+<li><strong>whisper_path</strong> – the grafana whisper directory</li>
+<li><strong>whisper_prefix</strong> – whisper time serie name</li>
+<li><strong>whisper_sampling</strong> – the whisper sampling</li>
+<li><strong>overwrite</strong> – overwrite mode</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.export_series_to_whisper">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">export_series_to_whisper</code><span class="sig-paren">(</span><em>input_series</em>, <em>whisper_path</em>, <em>whisper_prefix</em>, <em>whisper_sampling</em>, <em>overwrite=True</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.export_series_to_whisper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call the whisper API to export the selected time series to Grafana in native format.
+If overwrite is True, the whisper file is truncated. If False data is appended in the whisper file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_series</strong> – the input time series</li>
+<li><strong>whisper_path</strong> – the path of the grafana whisper directory</li>
+<li><strong>whisper_prefix</strong> – the name of the whisper export</li>
+<li><strong>whisper_sampling</strong> – samplings of the whisper time series</li>
+<li><strong>overwrite</strong> – truncate or append in the whisper data frame</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.export_to_whisper">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">export_to_whisper</code><span class="sig-paren">(</span><em>dataframe</em>, <em>whisper_path</em>, <em>whisper_prefix</em>, <em>whisper_sampling</em>, <em>timestamp_column=None</em>, <em>columns=None</em>, <em>grouping_column=None</em>, <em>overwrite=True</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.export_to_whisper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a table name as input, and exports its content to a whisper directory in a time series format.
+The table is expected to have a timestamp column which will be used to properly format the numerical
+columns in the table as timeseries variables. If grouping_column is provided, it will be used to
+split the dataframe into several dataframes that each will be exported to whisper as independent series.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> – the dataframe to export</li>
+<li><strong>whisper_path</strong> – the grafana whisper absolute path</li>
+<li><strong>whisper_prefix</strong> – the grafana whisper time serie prefix</li>
+<li><strong>whisper_sampling</strong> – a list of whisper sampling formats. Ex: [(‘1m’, ‘1d’),]</li>
+<li><strong>timestamp_column</strong> – the specified column is used as the timestamp index in whisper</li>
+<li><strong>columns</strong> – columns to export</li>
+<li><strong>grouping_column</strong> – grouping column</li>
+<li><strong>overwrite</strong> – overwrite existing whisper files (truncate)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.format_index">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">format_index</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.format_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides each value of the index by 10e9 (for a timestampIndex, returns the timestamp as seconds)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – the dataframe index serie</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.format_index_and_data">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">format_index_and_data</code><span class="sig-paren">(</span><em>input_series</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.format_index_and_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call format_index function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>input_series</strong> – input dataframe</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">output dataframe with formatted index</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.format_values">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">format_values</code><span class="sig-paren">(</span><em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.format_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format the values of a Pandas Dataframe to match whisper required format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>values</strong> – pandas.Series -&gt; fill NA with zeros and converts to np.float32</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the formatted pandas series</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.get_numerical_columns">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">get_numerical_columns</code><span class="sig-paren">(</span><em>dataframe</em>, <em>columns=None</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.get_numerical_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a dataframe and a set of columns: if ‘columns’ is not None,
+returns the sub-dataframe with only the columns passed as argument,
+else returns returns the sub-dataframe with only all the columns whose
+type is numerical (int or float).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> – the input dataframe</li>
+<li><strong>columns</strong> – the selected columns</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the sub dataframe with the selected columns</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.make_whisper_dir">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">make_whisper_dir</code><span class="sig-paren">(</span><em>whisper_path</em>, <em>whisper_prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.make_whisper_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the whisper directory used to store timeseries data if necessary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>whisper_path</strong> – the absolute whisper path</li>
+<li><strong>whisper_prefix</strong> – the whisper prefix (last directiry name)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.io.export_grafana.mkdir_p">
+<code class="descclassname">smartgrid.io.export_grafana.</code><code class="descname">mkdir_p</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.io.export_grafana.mkdir_p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create recursively directories in path. Catch exception in case of existing directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> – directory path</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-smartgrid.io" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="smartgrid.microgrid.html" class="btn btn-neutral float-right" title="smartgrid.microgrid package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="smartgrid.image_processing.html" class="btn btn-neutral" title="smartgrid.image_processing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ENGIE.
+      Last updated on Aug 29, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

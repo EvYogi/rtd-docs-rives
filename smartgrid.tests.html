@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>smartgrid.tests package &mdash; Smart Grid API  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/engiegreen.jpg"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Smart Grid API  documentation" href="index.html"/>
+        <link rel="up" title="smartgrid package" href="smartgrid.html"/>
+        <link rel="next" title="SmartGrid tutorials" href="tutorial.html"/>
+        <link rel="prev" title="smartgrid.pvmodeling package" href="smartgrid.pvmodeling.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Smart Grid API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">smartgrid</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="smartgrid.html">smartgrid package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="smartgrid.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.image_processing.html">smartgrid.image_processing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.io.html">smartgrid.io package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.microgrid.html">smartgrid.microgrid package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.pvmodeling.html">smartgrid.pvmodeling package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">smartgrid.tests package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="smartgrid.html#module-smartgrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">SmartGrid tutorials</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Smart Grid API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">smartgrid</a> &raquo;</li>
+        
+          <li><a href="smartgrid.html">smartgrid package</a> &raquo;</li>
+        
+      <li>smartgrid.tests package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/smartgrid.tests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="smartgrid-tests-package">
+<h1>smartgrid.tests package<a class="headerlink" href="#smartgrid-tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-smartgrid.tests.test_block_matching">
+<span id="smartgrid-tests-test-block-matching-module"></span><h2>smartgrid.tests.test_block_matching module<a class="headerlink" href="#module-smartgrid.tests.test_block_matching" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_block_matching.TestImageProcessing">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_block_matching.</code><code class="descname">TestImageProcessing</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_block_matching.TestImageProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_block_matching.TestImageProcessing.test_block_match_format">
+<code class="descname">test_block_match_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_block_matching.TestImageProcessing.test_block_match_format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_block_matching.TestImageProcessing.test_block_match_image_consistency">
+<code class="descname">test_block_match_image_consistency</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_block_matching.TestImageProcessing.test_block_match_image_consistency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_block_matching.TestImageProcessing.test_interpolate_vectors_generates_consistent_vector_sizes">
+<code class="descname">test_interpolate_vectors_generates_consistent_vector_sizes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_block_matching.TestImageProcessing.test_interpolate_vectors_generates_consistent_vector_sizes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_block_matching.TestImageProcessing.test_smoothing_vectors_format">
+<code class="descname">test_smoothing_vectors_format</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_block_matching.TestImageProcessing.test_smoothing_vectors_format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_compute_GHI">
+<span id="smartgrid-tests-test-compute-ghi-module"></span><h2>smartgrid.tests.test_compute_GHI module<a class="headerlink" href="#module-smartgrid.tests.test_compute_GHI" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_compute_GHI.TestClearSkyGHI">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_compute_GHI.</code><code class="descname">TestClearSkyGHI</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_compute_GHI.TestClearSkyGHI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_compute_GHI.TestClearSkyGHI.test_clear_sky_ghi_returns_a_float">
+<code class="descname">test_clear_sky_ghi_returns_a_float</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_compute_GHI.TestClearSkyGHI.test_clear_sky_ghi_returns_a_float" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_io_module">
+<span id="smartgrid-tests-test-io-module-module"></span><h2>smartgrid.tests.test_io_module module<a class="headerlink" href="#module-smartgrid.tests.test_io_module" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_io_module.TestExportGrafana">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_io_module.</code><code class="descname">TestExportGrafana</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_io_module.TestExportGrafana" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_io_module.TestExportGrafana.test_export_should_create_whisper_files">
+<code class="descname">test_export_should_create_whisper_files</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_io_module.TestExportGrafana.test_export_should_create_whisper_files" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_io_module.TestExportGrafana.test_export_with_empty_should_raise">
+<code class="descname">test_export_with_empty_should_raise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_io_module.TestExportGrafana.test_export_with_empty_should_raise" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_io_module.TestExportGrafana.test_export_with_group_should_export_multiple_timeseries">
+<code class="descname">test_export_with_group_should_export_multiple_timeseries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_io_module.TestExportGrafana.test_export_with_group_should_export_multiple_timeseries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_microgrid_components">
+<span id="smartgrid-tests-test-microgrid-components-module"></span><h2>smartgrid.tests.test_microgrid_components module<a class="headerlink" href="#module-smartgrid.tests.test_microgrid_components" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_microgrid_components.TestInverter">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_microgrid_components.</code><code class="descname">TestInverter</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestInverter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_microgrid_components.TestInverter.test_inverter_spline_output_valid_coefs">
+<code class="descname">test_inverter_spline_output_valid_coefs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestInverter.test_inverter_spline_output_valid_coefs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_microgrid_components.TestInverter.test_inverter_spline_output_valid_shape">
+<code class="descname">test_inverter_spline_output_valid_shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestInverter.test_inverter_spline_output_valid_shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="smartgrid.tests.test_microgrid_components.TestJouleHeating">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_microgrid_components.</code><code class="descname">TestJouleHeating</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestJouleHeating" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_microgrid_components.TestJouleHeating.test_joule_model_generation">
+<code class="descname">test_joule_model_generation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestJouleHeating.test_joule_model_generation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_microgrid_components.TestJouleHeating.test_joule_should_returns_valid_columns">
+<code class="descname">test_joule_should_returns_valid_columns</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_microgrid_components.TestJouleHeating.test_joule_should_returns_valid_columns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_pvmodeling">
+<span id="smartgrid-tests-test-pvmodeling-module"></span><h2>smartgrid.tests.test_pvmodeling module<a class="headerlink" href="#module-smartgrid.tests.test_pvmodeling" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_pvmodeling.</code><code class="descname">TestPvModeling</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling.test_photocurrent_equal_to_desoto_with_example_module">
+<code class="descname">test_photocurrent_equal_to_desoto_with_example_module</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling.test_photocurrent_equal_to_desoto_with_example_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling.test_photocurrent_equal_to_desoto_with_zero_module">
+<code class="descname">test_photocurrent_equal_to_desoto_with_zero_module</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling.test_photocurrent_equal_to_desoto_with_zero_module" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling.test_solarangle">
+<code class="descname">test_solarangle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling.test_solarangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_pvmodeling.TestPvModeling.test_standardcelltemp_should_returns_valid_values">
+<code class="descname">test_standardcelltemp_should_returns_valid_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_pvmodeling.TestPvModeling.test_standardcelltemp_should_returns_valid_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_satellite_image_processing">
+<span id="smartgrid-tests-test-satellite-image-processing-module"></span><h2>smartgrid.tests.test_satellite_image_processing module<a class="headerlink" href="#module-smartgrid.tests.test_satellite_image_processing" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_satellite_image_processing.TestImageProcessing">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_satellite_image_processing.</code><code class="descname">TestImageProcessing</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_satellite_image_processing.TestImageProcessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_satellite_image_processing.TestImageProcessing.test_remove_borders_with_convolution_does_not_work_when_sizes_are_different">
+<code class="descname">test_remove_borders_with_convolution_does_not_work_when_sizes_are_different</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_satellite_image_processing.TestImageProcessing.test_remove_borders_with_convolution_does_not_work_when_sizes_are_different" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_satellite_image_processing.TestImageProcessing.test_remove_borders_with_convolution_produces_image_same_size">
+<code class="descname">test_remove_borders_with_convolution_produces_image_same_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_satellite_image_processing.TestImageProcessing.test_remove_borders_with_convolution_produces_image_same_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_simulator">
+<span id="smartgrid-tests-test-simulator-module"></span><h2>smartgrid.tests.test_simulator module<a class="headerlink" href="#module-smartgrid.tests.test_simulator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_simulator.TestSimulator">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_simulator.</code><code class="descname">TestSimulator</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_puiss_max_should_returns_only_zeros">
+<code class="descname">test_puiss_max_should_returns_only_zeros</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_puiss_max_should_returns_only_zeros" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_puiss_max_should_returns_same_number_of_lines">
+<code class="descname">test_puiss_max_should_returns_same_number_of_lines</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_puiss_max_should_returns_same_number_of_lines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_reference_data">
+<code class="descname">test_reference_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_reference_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_reference_inverter">
+<code class="descname">test_reference_inverter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_reference_inverter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_reference_joule">
+<code class="descname">test_reference_joule</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_reference_joule" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_reference_meteo_data">
+<code class="descname">test_reference_meteo_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_reference_meteo_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_simulator.TestSimulator.test_simple_simulation">
+<code class="descname">test_simple_simulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_simulator.TestSimulator.test_simple_simulation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests.test_solar_angles_computation">
+<span id="smartgrid-tests-test-solar-angles-computation-module"></span><h2>smartgrid.tests.test_solar_angles_computation module<a class="headerlink" href="#module-smartgrid.tests.test_solar_angles_computation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation">
+<em class="property">class </em><code class="descclassname">smartgrid.tests.test_solar_angles_computation.</code><code class="descname">TestSolarangleComputation</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_day_of_the_year_gives_correct_value">
+<code class="descname">test_day_of_the_year_gives_correct_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_day_of_the_year_gives_correct_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_solar_angle_computation_does_not_work_when_image_size_is_different">
+<code class="descname">test_solar_angle_computation_does_not_work_when_image_size_is_different</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_solar_angle_computation_does_not_work_when_image_size_is_different" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_solar_angle_computation_returns_two_images_of_the_same_size">
+<code class="descname">test_solar_angle_computation_returns_two_images_of_the_same_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.tests.test_solar_angles_computation.TestSolarangleComputation.test_solar_angle_computation_returns_two_images_of_the_same_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-smartgrid.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="SmartGrid tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="smartgrid.pvmodeling.html" class="btn btn-neutral" title="smartgrid.pvmodeling package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ENGIE.
+      Last updated on Oct 02, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

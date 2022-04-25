@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>smartgrid.microgrid package &mdash; Smart Grid API  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/engiegreen.jpg"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Smart Grid API  documentation" href="index.html"/>
+        <link rel="up" title="smartgrid package" href="smartgrid.html"/>
+        <link rel="next" title="smartgrid.pvmodeling package" href="smartgrid.pvmodeling.html"/>
+        <link rel="prev" title="smartgrid.io package" href="smartgrid.io.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Smart Grid API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">smartgrid</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="smartgrid.html">smartgrid package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="smartgrid.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.image_processing.html">smartgrid.image_processing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.io.html">smartgrid.io package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">smartgrid.microgrid package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.pvmodeling.html">smartgrid.pvmodeling package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="smartgrid.tests.html">smartgrid.tests package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="smartgrid.html#module-smartgrid">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">SmartGrid tutorials</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Smart Grid API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">smartgrid</a> &raquo;</li>
+        
+          <li><a href="smartgrid.html">smartgrid package</a> &raquo;</li>
+        
+      <li>smartgrid.microgrid package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/smartgrid.microgrid.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="smartgrid-microgrid-package">
+<h1>smartgrid.microgrid package<a class="headerlink" href="#smartgrid-microgrid-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-smartgrid.microgrid.inverter">
+<span id="smartgrid-microgrid-inverter-module"></span><h2>smartgrid.microgrid.inverter module<a class="headerlink" href="#module-smartgrid.microgrid.inverter" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.ares_load">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">ares_load</code><span class="sig-paren">(</span><em>file_names, ignore_columns=['ChaineArretUrgence']</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.ares_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load ARES data specified in file_names</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_names</strong> – list of file to load in compressed files</li>
+<li><strong>ignore_columns</strong> – list of columns to filter</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">a global dataframe</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.ares_preprocessing">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">ares_preprocessing</code><span class="sig-paren">(</span><em>df</em>, <em>eps_max=5</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.ares_preprocessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocess the ARES data to select the valid inverter data</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> – ARES data</li>
+<li><strong>eps_max</strong> – filter on inverter data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">filtered and processed data</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.clean_column_name">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">clean_column_name</code><span class="sig-paren">(</span><em>col</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.clean_column_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple function to clean column names from ARES data
+:param col: column string
+:return: cleaned column</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.fit_inverter_spline">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">fit_inverter_spline</code><span class="sig-paren">(</span><em>df</em>, <em>num=21</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.fit_inverter_spline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit a cubic spline data from ARES dataset</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>df</strong> – Preprocessed ARES data</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A Scipy cubic spline model</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.load_s3_ares_data">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">load_s3_ares_data</code><span class="sig-paren">(</span><em>data_path</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.load_s3_ares_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load data from an S3 synchronized directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_path</strong> – path of the S3 local sync store</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the dataframe with the ARES data</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.inverter.save_pp_inverter">
+<code class="descclassname">smartgrid.microgrid.inverter.</code><code class="descname">save_pp_inverter</code><span class="sig-paren">(</span><em>ares</em>, <em>output_path='data/models/ppInverter.pk'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.inverter.save_pp_inverter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute and save an inverter model in output_path.
+The model UniviariateSpline is exported in pickle format.
+:param ares: ares dataframe
+:param output_path: output export path
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.microgrid.joule_heating">
+<span id="smartgrid-microgrid-joule-heating-module"></span><h2>smartgrid.microgrid.joule_heating module<a class="headerlink" href="#module-smartgrid.microgrid.joule_heating" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.microgrid.joule_heating.fit_joule_heating_spline">
+<code class="descclassname">smartgrid.microgrid.joule_heating.</code><code class="descname">fit_joule_heating_spline</code><span class="sig-paren">(</span><em>df</em>, <em>num=21</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.joule_heating.fit_joule_heating_spline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit a cubic spline data from ARES dataset</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>df</strong> – Preprocessed ARES data</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A Scipy cubic spline model</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.joule_heating.joule_heating_preprocessing">
+<code class="descclassname">smartgrid.microgrid.joule_heating.</code><code class="descname">joule_heating_preprocessing</code><span class="sig-paren">(</span><em>df</em>, <em>window_size=1</em>, <em>date_filtering=True</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.joule_heating.joule_heating_preprocessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dataset preprocessing for the joule heating effect based on historical measurements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> – historical data (ex: ares dataset)</li>
+<li><strong>window_size</strong> – the final dataset sampling rate</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the dataset</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.joule_heating.save_joule_heating_model">
+<code class="descclassname">smartgrid.microgrid.joule_heating.</code><code class="descname">save_joule_heating_model</code><span class="sig-paren">(</span><em>ares</em>, <em>date_filtering=True</em>, <em>output_path='data/models/ppJouleHeating.pk'</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.joule_heating.save_joule_heating_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.microgrid.simulator">
+<span id="smartgrid-microgrid-simulator-module"></span><h2>smartgrid.microgrid.simulator module<a class="headerlink" href="#module-smartgrid.microgrid.simulator" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.autoconsommation">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">autoconsommation</code><span class="sig-paren">(</span><em>puissancePV_installee</em>, <em>capacite_batterie</em>, <em>inputs</em>, <em>outputs</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.autoconsommation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.batteryState">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">batteryState</code><span class="sig-paren">(</span><em>SOC</em>, <em>P_onduleur_batterie_AC</em>, <em>delta_t</em>, <em>possibilite_decharge</em>, <em>possibilite_recharge</em>, <em>coeff_batt</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.batteryState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.battery_state">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">battery_state</code><span class="sig-paren">(</span><em>SOC</em>, <em>P_onduleur_batterie_AC</em>, <em>delta_t</em>, <em>Cbatt</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.battery_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.gestion_flux">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">gestion_flux</code><span class="sig-paren">(</span><em>P_ac_dispo</em>, <em>P_AuxLoads</em>, <em>possibilite_decharge</em>, <em>possibilite_recharge</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.gestion_flux" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.load_ref_loads">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">load_ref_loads</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.load_ref_loads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load “loads” reference data for the simulator
+:return: a dataframe with ref data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.load_ref_meteo">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">load_ref_meteo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.load_ref_meteo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.load_ref_ppInverter">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">load_ref_ppInverter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.load_ref_ppInverter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.load_ref_ppJouleHeating">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">load_ref_ppJouleHeating</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.load_ref_ppJouleHeating" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.microgrid_range_simulator">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">microgrid_range_simulator</code><span class="sig-paren">(</span><em>coeff_charges_range=[1], coef_PV_range=[1], coeff_battery_range=[1]</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.microgrid_range_simulator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.microgrid_simulator">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">microgrid_simulator</code><span class="sig-paren">(</span><em>coeff_charges</em>, <em>coeff_PV</em>, <em>coeff_battery</em>, <em>num_points=10000</em>, <em>max_history=None</em>, <em>strategy=&lt;function powerBalanceControl&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.microgrid_simulator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.microgrid_sizing_optimizer">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">microgrid_sizing_optimizer</code><span class="sig-paren">(</span><em>max_history=None</em>, <em>num_points=10000</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.microgrid_sizing_optimizer" title="Permalink to this definition">¶</a></dt>
+<dd><p>OPTIMISATION DIMENSIONNEMENT AUTOCONSOMMATION
+via la SIMULATION DU MICROGRID
+:return:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.powerBalanceControl">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">powerBalanceControl</code><span class="sig-paren">(</span><em>P_ac_dispo</em>, <em>P_auxiliaires</em>, <em>P_loads</em>, <em>possibilite_decharge</em>, <em>possibilite_recharge</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.powerBalanceControl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.puissanceDisponibleAC">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">puissanceDisponibleAC</code><span class="sig-paren">(</span><em>P_pv_ac</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.puissanceDisponibleAC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.puissanceLimitationPV">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">puissanceLimitationPV</code><span class="sig-paren">(</span><em>P_auxiliaires</em>, <em>P_loads</em>, <em>possibilite_recharge</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.puissanceLimitationPV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="smartgrid.microgrid.simulator.puissanceSortieOnduleurAC">
+<code class="descclassname">smartgrid.microgrid.simulator.</code><code class="descname">puissanceSortieOnduleurAC</code><span class="sig-paren">(</span><em>P_pv_dc_mpp</em>, <em>P_limitation_PV</em>, <em>ppOnduleurPV</em><span class="sig-paren">)</span><a class="headerlink" href="#smartgrid.microgrid.simulator.puissanceSortieOnduleurAC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-smartgrid.microgrid">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-smartgrid.microgrid" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="smartgrid.pvmodeling.html" class="btn btn-neutral float-right" title="smartgrid.pvmodeling package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="smartgrid.io.html" class="btn btn-neutral" title="smartgrid.io package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, ENGIE.
+      Last updated on Aug 29, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
